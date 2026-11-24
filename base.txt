@@ -1,0 +1,30 @@
+
+npm create vite@latest [name] -- --template=react
+
+npm i bootstrap@5.3.8
+npm install @mui/material @emotion/react @emotion/styled
+npm install @fontsource/roboto
+
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+Powershell
+Invoke-RestMethod -Uri "http://localhost:3000/pedidos" -Method Post -ContentType "application/json" -Body '{"nombre": "Francisca Muñoz", "tipo": "Combo", "total": 8500, "medioPago": "Tarjeta"}'
+
+Invoke-RestMethod -Uri "http://localhost:3000/pedidos/1" -Method Delete
+
+BFF:
+
+npm i -g @nestjs/cli
+nest new project-name
+- npm
+- n
+- CJS
+
+nest g co [pedidos]
+nest g class --flat dto/[pedido]
+nest g service [pedidos]
+npm install axios
+nest g class --flat utils/[pedidos-mapper]
